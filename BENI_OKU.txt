@@ -1,0 +1,48 @@
+================================================================
+ÖZEL ELİT SÜRÜCÜ KURSU – WEB SİTESİ KULLANIM KILAVUZU
+================================================================
+
+FİYATLARI VE AÇIKLAMALARI NASIL GÜNCELLERİM?
+----------------------------------------------
+Ehliyet fiyatlarını ve açıklamalarını değiştirmek için sadece
+"fiyatlar.json" dosyasını düzenlemeniz yeterlidir.
+
+ADIMLAR:
+
+1. cPanel'e giriş yapın (hosting sağlayıcınızın verdiği adres).
+
+2. Sol menüden "Dosya Yöneticisi"ni açın.
+
+3. Public_html (veya sitenizin yüklendiği klasör) içinde
+   "fiyatlar.json" dosyasını bulun.
+
+4. Dosyaya sağ tıklayın → "Düzenle" seçin.
+
+5. Değiştirmek istediğiniz ehliyet satırını bulun:
+
+   Örnek (B Sınıfı için):
+   ----------------------
+   "id": "b",
+   "sinif": "B Sınıfı Ehliyet",
+   "fiyat": "8500",          ← Buraya rakam yazın (₺ işareti otomatik eklenir)
+   "fiyat_label": "kurs ücreti",  ← Fiyatın altındaki küçük açıklama
+   "aciklama": "..."         ← Kartın üzerindeki metin
+
+   NOT: Fiyatı gizlemek isterseniz "fiyat" alanını boş bırakın:
+   "fiyat": ""
+
+6. Değişiklikleri kaydedin → "Kaydet" butonuna tıklayın.
+
+7. Sitenizi tarayıcıda açın ve Ctrl+F5 ile yenileyin.
+   Fiyatlar otomatik olarak güncellenmiş olacaktır.
+
+----------------------------------------------------------------
+ÖNEMLI NOTLAR:
+- JSON dosyasında virgülleri silmeyin.
+- Sayıları tırnak içinde yazın: "8500" (doğru), 8500 (yanlış).
+- Her değişiklikten sonra sayfayı yenileyin.
+----------------------------------------------------------------
+
+İLETİŞİM:
+Teknik destek için web tasarımcınız ile iletişime geçin.
+================================================================

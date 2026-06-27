@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ÖZEL ELİT SÜRÜCÜ KURSU – Eskişehir</title>
+  <meta name="description" content="ÖZEL ELİT SÜRÜCÜ KURSU Eskişehir – A, B, A1, A2, C, CE sınıfı ehliyet eğitimi. 3 şube, uzman eğitmenler, Volkswagen araç filosu." />
+  <meta name="keywords" content="sürücü kursu, eskişehir sürücü kursu, elit sürücü kursu, ehliyet, B sınıfı ehliyet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__locations">
+        <a href="tel:02223223399"><i class="fa-solid fa-location-dot"></i> Güllük Şube: 0(222) 322 33 99</a>
+        <a href="tel:02223353388"><i class="fa-solid fa-location-dot"></i> Uluönder Şube: 0(222) 335 33 88</a>
+        <a href="tel:02222349095"><i class="fa-solid fa-location-dot"></i> Odunpazarı Şube: 0(222) 234 90 95</a>
+      </div>
+      <div class="topbar__right">
+        <a href="mailto:eskisehirelitmtsk@gmail.com"><i class="fa-solid fa-envelope"></i> eskisehirelitmtsk@gmail.com</a>
+        <div class="topbar__socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo2.png" alt="ÖZEL ELİT SÜRÜCÜ KURSU" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="active">Anasayfa</a>
+        <a href="psikoteknik.html">Psikoteknik</a>
+        <a href="#ehliyet">Ehliyet</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menüyü Aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Anasayfa</a>
+    <a href="psikoteknik.html">Psikoteknik</a>
+    <a href="#ehliyet">Ehliyet</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__slider">
+      <div class="hero__slide hero__slide--1 active">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <p class="hero__eyebrow">Eskişehir'in Güvenilir Adresi</p>
+          <h1 class="hero__title">Özel Elit<br /><span>Sürücü Kursu</span></h1>
+          <p class="hero__desc">Güllük Mah. Sakarya-2 Cad. No:69 (Keskin Market Karşısı)</p>
+          <div class="hero__actions">
+            <a href="#iletisim" class="btn btn--primary">Bize Ulaşın</a>
+            <a href="#ehliyet" class="btn btn--outline">Eğitimler</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide hero__slide--2">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <p class="hero__eyebrow">Odunpazarı Şubemiz</p>
+          <h1 class="hero__title">Elit Sürücü Kursu<br /><span>Odunpazarı</span></h1>
+          <p class="hero__desc">Mustafa Kemal Atatürk Cd. NO:162/A (Gülay Kanatlı Ortaokulu Çaprazı)</p>
+          <div class="hero__actions">
+            <a href="#iletisim" class="btn btn--primary">Bize Ulaşın</a>
+            <a href="#ehliyet" class="btn btn--outline">Eğitimler</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide hero__slide--3">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <p class="hero__eyebrow">Uluönder Şubemiz</p>
+          <h1 class="hero__title">Elit Sürücü Kursu<br /><span>Uluönder</span></h1>
+          <p class="hero__desc">Uluönder Mah. İsmet İnönü-2 Cad. No:43/A (Birtat Cafe Bistro Karşısı)</p>
+          <div class="hero__actions">
+            <a href="#iletisim" class="btn btn--primary">Bize Ulaşın</a>
+            <a href="#ehliyet" class="btn btn--outline">Eğitimler</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__controls">
+      <button class="hero__prev" id="heroPrev" aria-label="Önceki"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="hero__dots" id="heroDots">
+        <button class="hero__dot active" data-index="0"></button>
+        <button class="hero__dot" data-index="1"></button>
+        <button class="hero__dot" data-index="2"></button>
+      </div>
+      <button class="hero__next" id="heroNext" aria-label="Sonraki"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="features">
+    <div class="container features__grid">
+      <div class="features__item">
+        <i class="fa-solid fa-car"></i>
+        <div>
+          <strong>Volkswagen Araçlar</strong>
+          <span>ile Sürüş Eğitimi</span>
+        </div>
+      </div>
+      <div class="features__item">
+        <i class="fa-solid fa-location-dot"></i>
+        <div>
+          <strong>Ulaşımı Kolay</strong>
+          <span>Merkezi Lokasyon</span>
+        </div>
+      </div>
+      <div class="features__item">
+        <i class="fa-solid fa-user-graduate"></i>
+        <div>
+          <strong>Alanında Uzman</strong>
+          <span>Mükemmel Eğitmenler</span>
+        </div>
+      </div>
+      <div class="features__item">
+        <i class="fa-solid fa-circle-check"></i>
+        <div>
+          <strong>Ehliyet Öncesi ve</strong>
+          <span>Sonrası Tam Destek</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__image">
+        <div class="about__img-wrap">
+          <img src="assets/car.png" alt="Özel Elit Sürücü Kursu Aracı" onerror="this.style.display='none'" />
+          <div class="about__img-placeholder"><i class="fa-solid fa-car-side"></i></div>
+        </div>
+        <div class="about__badge">
+          <span class="about__badge-num">3</span>
+          <span class="about__badge-text">Şube</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section-eyebrow">Hakkımızda</p>
+        <h2 class="section-title">Özel Elit Sürücü Kursu</h2>
+        <p>Firmamız Elit Sürücü Kursu hizmet almayı seçen kişilere, sürücü eğitiminin herhangi bir noktasında, gereksinim duydukları tüm teorik ve direksiyon eğitimlerini, sınavlara hazırlanmalarını kurs içinde kolaylıkla ulaşabilecekleri süreç hakkındaki bilgilerle tüm ehliyet alma ve eğitim sürecinde adaylarımızla iletişim halinde kalmaktayız.</p>
+        <ul class="about__list">
+          <li><i class="fa-solid fa-check"></i> Profesyonel teorik ve direksiyon eğitimi</li>
+          <li><i class="fa-solid fa-check"></i> Volkswagen araç filosu ile uygulama</li>
+          <li><i class="fa-solid fa-check"></i> Sınav sonrası tam destek</li>
+          <li><i class="fa-solid fa-check"></i> 3 merkezi şube</li>
+        </ul>
+        <a href="#iletisim" class="btn btn--primary">Devam »</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <div class="container cta-strip__inner">
+      <i class="fa-solid fa-triangle-exclamation cta-strip__icon"></i>
+      <div class="cta-strip__text">
+        <p>Daha Ayrıntılı bilgi almak için.</p>
+        <span>Alanında uzman kişilerden doğru ve güncel bilgiler.</span>
+      </div>
+      <a href="tel:02223223399" class="cta-strip__phone">0(222) 322 33 99</a>
+      <i class="fa-solid fa-triangle-exclamation cta-strip__icon"></i>
+    </div>
+  </section>
+
+  <!-- EHLIYET / EGITIMLER -->
+  <section class="licenses" id="ehliyet">
+    <div class="container">
+      <p class="section-eyebrow text-center">Sınıflar</p>
+      <h2 class="section-title text-center">Eğitimler</h2>
+      <div class="licenses__grid">
+
+        <div class="license-card">
+          <div class="license-card__img">
+            <img src="assets/motorcycle-a.png" alt="A Sınıfı Ehliyet" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-motorcycle\'></i>'" />
+          </div>
+          <div class="license-card__body">
+            <h3>A Sınıfı Ehliyet</h3>
+            <p>Yeni çıkan yasalarla 35 kw gücünden yüksek tüm motosikletleri kullanmak için A sınıfı ehliyet şartı aranmaktadır. A sınıfı ehliyetler ÖZEL ELİT SÜRÜCÜ KURSU'nda gerçekleştirilen eğitimler sonucunda girilen sınavlarla alınabilmektedir.</p>
+            <a href="a-sinifi-ehliyet.html" class="btn btn--dark">Detay</a>
+          </div>
+        </div>
+
+        <div class="license-card license-card--featured" data-ehliyet-id="b">
+          <div class="license-card__badge">Popüler</div>
+          <div class="license-card__img">
+            <img src="assets/car-b.png" alt="B Sınıfı Ehliyet" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-car\'></i>'" />
+          </div>
+          <div class="license-card__price">
+            <span class="price-amount ehliyet-fiyat" data-id="b"></span>
+            <span class="price-label ehliyet-fiyat-label" data-id="b"></span>
+          </div>
+          <div class="license-card__body">
+            <h3>B Sınıfı Ehliyet</h3>
+            <p class="ehliyet-aciklama" data-id="b">Otomobil ve kamyonet kullanacakların alması gereken ehliyet sınıfında bulunuyor. B sınıfı sürücü belgesi sahipleri, aynı zamanda M, B1, F sınıfına dahil olan araçları da kullanabiliyor.</p>
+            <a href="b-sinifi-ehliyet.html" class="btn btn--primary">Detay</a>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <div class="license-card__img">
+            <img src="assets/motorcycle-a1.png" alt="A1 Sınıfı Ehliyet" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-motorcycle\'></i>'" />
+          </div>
+          <div class="license-card__body">
+            <h3>A1 Sınıfı Ehliyet</h3>
+            <p>Silindir hacmi 125 santimetreküp, gücü 11 kilowat ve gücünün ağırlığına oranı 0,1'i geçmeyen, sepetli veya sepetsiz iki tekerlekli motosikletler ile gücü 15 kilowatı geçmeyen üç tekerlekli motosikletleri kullanacaklara verilir.</p>
+            <a href="a1-sinifi-ehliyet.html" class="btn btn--dark">Detay</a>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <div class="license-card__img">
+            <img src="assets/motorcycle-a2.png" alt="A2 Sınıfı Ehliyet" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-motorcycle\'></i>'" />
+          </div>
+          <div class="license-card__body">
+            <h3>A2 Sınıfı Ehliyet</h3>
+            <p>Bu sürücü belgesine sahip olmak için adayın 18 yaşını doldurmuş olması şartı aranmaktadır. Ayrıca A2 motor ehliyet sahibi olan adaylar; A1 ve M sınıflarının kullanma yetkisine sahip olan tüm araçları sürme yetkisine sahip olacaklardır.</p>
+            <a href="a2-sinifi-ehliyet.html" class="btn btn--dark">Detay</a>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <div class="license-card__img">
+            <img src="assets/truck-c.png" alt="C Sınıfı Ehliyet" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-truck\'></i>'" />
+          </div>
+          <div class="license-card__body">
+            <h3>C Sınıfı Ehliyet</h3>
+            <p>ÖZEL ELİT SÜRÜCÜ KURSU, Eskişehir'de C sınıfı ehliyet eğitim merkezi olarak kamyon ve çekici araç kullanmak isteyen araç sürücülerinin ihtiyacı olan bu sınıf için teorik ve pratik eğitimleri vermektedir.</p>
+            <a href="c-sinifi-ehliyet.html" class="btn btn--dark">Detay</a>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <div class="license-card__img">
+            <img src="assets/truck-ce.png" alt="CE Sınıfı Ehliyet" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-truck-moving\'></i>'" />
+          </div>
+          <div class="license-card__body">
+            <h3>CE Sınıfı Ehliyet</h3>
+            <p>ÖZEL ELİT SÜRÜCÜ KURSU olarak verdikleri eğitimler arasında CE sınıfı ehliyet de yer almaktadır. TIR ve römork sürücüleri için kapsamlı teorik ve pratik eğitim sunulmaktadır.</p>
+            <a href="ce-sinifi-ehliyet.html" class="btn btn--dark">Detay</a>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <div class="license-card__img">
+            <img src="assets/motorcycle-a2otomatik.png" alt="A2 Otomatik Ehliyet" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-motorcycle\'></i>'" />
+          </div>
+          <div class="license-card__body">
+            <h3>A2 Otomatik Ehliyet</h3>
+            <p>A2 sınıfı otomatik motosiklet ehliyetini alırken kullanacağınız vitessiz motorunuzla sınavda size kolaylık sağlar.</p>
+            <a href="a2-otomatik-ehliyet.html" class="btn btn--dark">Detay</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PSİKOTEKNİK -->
+  <section class="psikoteknik" id="psikoteknik">
+    <div class="container psikoteknik__inner">
+      <div class="psikoteknik__text">
+        <p class="section-eyebrow">Zorunlu Test</p>
+        <h2 class="section-title">Psikoteknik Değerlendirme</h2>
+        <p>Ehliyet almak için gerekli olan psikoteknik testler sürücü adaylarının zihinsel ve motor becerilerini ölçmek amacıyla uygulanmaktadır. Kursumuzdaki uzman kadromuz bu süreçte adaylarımıza tam destek vermektedir.</p>
+        <ul class="about__list">
+          <li><i class="fa-solid fa-check"></i> Dikkat ve konsantrasyon testleri</li>
+          <li><i class="fa-solid fa-check"></i> Tepki süresi ölçümü</li>
+          <li><i class="fa-solid fa-check"></i> Uzman rehberliği ile hazırlık</li>
+        </ul>
+        <a href="#iletisim" class="btn btn--primary">Bilgi Al</a>
+      </div>
+      <div class="psikoteknik__cards">
+        <div class="info-card">
+          <i class="fa-solid fa-file-lines"></i>
+          <h4>Ehliyet Alma Süreci</h4>
+          <p>Başvurudan sınava kadar tüm adımlar için yanınızdayız.</p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-folder-open"></i>
+          <h4>Gerekli Evraklar</h4>
+          <p>Başvuru için gerekli tüm belgeleri önceden hazırlayın.</p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-building"></i>
+          <h4>Odunpazarı Şubesi</h4>
+          <p>Mustafa Kemal Atatürk Cd. NO:162/A adresimizde hizmetinizdeyiz.</p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-steering-wheel"></i>
+          <h4>Özel Direksiyon Dersi</h4>
+          <p>Bireysel ihtiyaçlarınıza özel ek direksiyon dersleri alın.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERİ -->
+  <section class="gallery" id="galeri">
+    <div class="container">
+      <p class="section-eyebrow text-center">Görsel</p>
+      <h2 class="section-title text-center">Galeri</h2>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--tall">
+          <div class="gallery__placeholder"><i class="fa-solid fa-image"></i><span>Şube Fotoğrafı</span></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder"><i class="fa-solid fa-image"></i><span>Eğitim Aracı</span></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder"><i class="fa-solid fa-image"></i><span>Sınıf İçi</span></div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <div class="gallery__placeholder"><i class="fa-solid fa-image"></i><span>Uluönder Şube</span></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder"><i class="fa-solid fa-image"></i><span>Odunpazarı Şube</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YORUMLAR -->
+  <section class="reviews" id="yorumlar">
+    <div class="container">
+      <p class="section-eyebrow text-center">Gerçek Deneyimler</p>
+      <h2 class="section-title text-center">Kursiyer Yorumları</h2>
+      <div class="reviews__grid">
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">SK</div>
+            <div>
+              <strong>Seda Kahraman</strong>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="review-card__google">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+          </div>
+          <p class="review-card__text">Direksiyon sınavını geçmemde Burcu Hocamın emeği çok büyük. İlk sınavdaki heyecanımdan sonra bana olan sabrınız, desteğiniz ve motivasyonunuz sayesinde kendime güvenmeyi öğrendim. Sakinliğiniz ve öğretme şekliniz benim için çok kıymetliydi. Her şey için çok teşekkür ederim, iyi ki yollarımız kesişmiş 🙏✨ Gönül rahatlığıyla herkese tavsiye ederim. 🌸</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">NŞ</div>
+            <div>
+              <strong>Nuran Şentürk</strong>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="review-card__google">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+          </div>
+          <p class="review-card__text">Dün 2. direksiyon sınavımdan geçtim. Burcu hocam sayesinde, seviyorum sizi. Cansınız can 😍 Allah razı olsun. Herkese tavsiye ederim ÖZEL ELİT SÜRÜCÜ KURSU'nu. Bir de Yılmaz hocam vardı kurstan ayrılmış, araba sürmeyi kendisinden öğrendim. Panik biriydim, çok saygılı ve sabırlıydı bana karşı, sizden de Allah razı olsun hocam, kralsınız.</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">NÖ</div>
+            <div>
+              <strong>Nagihan Özdemir</strong>
+              <div class="review-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="review-card__google">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+          </div>
+          <p class="review-card__text">ÖZEL ELİT SÜRÜCÜ KURSU'nda direksiyon derslerim boyunca Serap hocam sayesinde çok güzel bir eğitim süreci geçirdim. Her zaman sabırlı, anlayışlı ve motive ediciydi. Sayesinde sınavı ilk girişte geçtim. Ehliyet almak isteyen herkese Serap hocamı ve ÖZEL ELİT SÜRÜCÜ KURSU'nu gönül rahatlığıyla tavsiye ederim.</p>
+        </div>
+
+      </div>
+      <div class="reviews__actions">
+        <a href="https://maps.google.com/?cid=3426350475058478455" target="_blank" rel="noopener" class="btn btn--outline-dark">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Sakarya Şubesi Yorumları
+        </a>
+        <a href="https://maps.google.com/?cid=12155408317219949292" target="_blank" rel="noopener" class="btn btn--outline-dark">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Uluönder Şubesi Yorumları
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBELER -->
+  <section class="branches" id="subeler">
+    <div class="container">
+      <p class="section-eyebrow text-center">Lokasyonlar</p>
+      <h2 class="section-title text-center">Şubelerimiz</h2>
+      <div class="branches__grid">
+        <div class="branch-card">
+          <div class="branch-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Güllük Şube</h3>
+          <p>Güllük Mah. Sakarya-2 Cad. No:69<br />(Keskin Market Karşısı)</p>
+          <div class="branch-card__phones">
+            <a href="tel:02223223399"><i class="fa-solid fa-phone"></i> 0(222) 322 33 99</a>
+            <a href="tel:05464636166"><i class="fa-solid fa-mobile"></i> 0(546) 463 61 66</a>
+          </div>
+        </div>
+        <div class="branch-card branch-card--featured">
+          <div class="branch-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Odunpazarı Şube</h3>
+          <p>Mustafa Kemal Atatürk Cd. NO:162/A<br />(Gülay Kanatlı Ortaokulu Çaprazı)</p>
+          <div class="branch-card__phones">
+            <a href="tel:02222349095"><i class="fa-solid fa-phone"></i> 0(222) 234 90 95</a>
+          </div>
+        </div>
+        <div class="branch-card">
+          <div class="branch-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Uluönder Şube</h3>
+          <p>Uluönder Mah. İsmet İnönü-2 Cad.<br />No:43/A (Birtat Cafe Bistro Karşısı)</p>
+          <div class="branch-card__phones">
+            <a href="tel:02223353388"><i class="fa-solid fa-phone"></i> 0(222) 335 33 88</a>
+            <a href="tel:05526989899"><i class="fa-solid fa-mobile"></i> 0(552) 698 98 99</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="contact" id="iletisim">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <p class="section-eyebrow">Bize Ulaşın</p>
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact__detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Güllük Şube</strong>
+            <span>Güllük Mah. Sakarya-2 Cad. No:69 (Keskin Market Karşısı)</span>
+          </div>
+        </div>
+        <div class="contact__detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Odunpazarı Şube</strong>
+            <span>İstiklal, Başarı Sk. No:3/2, 26000 Odunpazarı/Eskişehir</span>
+          </div>
+        </div>
+        <div class="contact__detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Uluönder Şube</strong>
+            <span>Uluönder Mah. İsmet İnönü-2 Cd. No:43/A (Birtat Fırın Bistro Karşısı)</span>
+          </div>
+        </div>
+        <div class="contact__detail">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Telefon</strong>
+            <span>0(222) 322 33 99 — 0(546) 463 61 66</span>
+          </div>
+        </div>
+        <div class="contact__detail">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>E-posta</strong>
+            <a href="mailto:eskisehirelitmtsk@gmail.com">eskisehirelitmtsk@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact__socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <h3>Mesaj Gönderin</h3>
+        <div class="form-group">
+          <input type="text" id="fname" name="name" placeholder="Adınız Soyadınız" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="fphone" name="phone" placeholder="Telefon Numaranız" />
+        </div>
+        <div class="form-group">
+          <input type="email" id="femail" name="email" placeholder="E-posta Adresiniz" required />
+        </div>
+        <div class="form-group">
+          <select name="branch" id="fbranch">
+            <option value="">Şube Seçiniz</option>
+            <option value="guллük">Güllük Şube</option>
+            <option value="odunpazari">Odunpazarı Şube</option>
+            <option value="uluonder">Uluönder Şube</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="fmessage" placeholder="Mesajınız" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Gönder <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <img src="assets/logo2.png" alt="ÖZEL ELİT SÜRÜCÜ KURSU" class="footer__logo-img" />
+        <p>Firmamız Elit Sürücü Kursu hizmet almayı seçen kişilere, sürücü eğitiminin herhangi bir noktasında gereksinim duydukları tüm teorik ve direksiyon eğitimlerini sunmaktadır.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Diğer</h4>
+        <ul>
+          <li><a href="#hero">Anasayfa</a></li>
+          <li><a href="#about">Kurumsal</a></li>
+          <li><a href="#ehliyet">Ehliyet</a></li>
+          <li><a href="#galeri">Fotoğraf Galeri</a></li>
+          <li><a href="#galeri">Video Galeri</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Ehliyet Sınıfları</h4>
+        <ul>
+          <li><a href="#ehliyet">A1 Sınıfı Ehliyet</a></li>
+          <li><a href="#ehliyet">A2 Sınıfı Ehliyet</a></li>
+          <li><a href="#ehliyet">B Sınıfı Ehliyet</a></li>
+          <li><a href="#ehliyet">B Otomatik Sınıfı Ehliyet</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Adres ve İletişim</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Güllük Mah. Sakarya-2 Caddesi No:69 (Keskin Market Karşısı)</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:02223223399">0(222) 322 33 99</a></p>
+        <p><i class="fa-solid fa-mobile"></i> <a href="tel:05464636166">0(546) 463 61 66</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:eskisehirelitmtsk@gmail.com">eskisehirelitmtsk@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>Copyright © 2024 Özel Elit Sürücü Kursu | Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/905464636166" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp ile ulaşın">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">WhatsApp ile Ulaşın</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

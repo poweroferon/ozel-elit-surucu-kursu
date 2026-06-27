@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri – ÖZEL ELİT SÜRÜCÜ KURSU Eskişehir</title>
+  <meta name="description" content="ÖZEL ELİT SÜRÜCÜ KURSU Eskişehir galeri – şubelerimiz, eğitim araçlarımız ve kursiyerlerimizden fotoğraf ve video görüntüleri." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/detail.css" />
+  <link rel="stylesheet" href="css/galeri.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__locations">
+        <a href="tel:02223223399"><i class="fa-solid fa-location-dot"></i> Güllük: 0(222) 322 33 99</a>
+        <a href="tel:02223353388"><i class="fa-solid fa-location-dot"></i> Uluönder: 0(222) 335 33 88</a>
+        <a href="tel:02222349095"><i class="fa-solid fa-location-dot"></i> Odunpazarı: 0(222) 234 90 95</a>
+      </div>
+      <div class="topbar__right">
+        <a href="mailto:eskisehirelitmtsk@gmail.com"><i class="fa-solid fa-envelope"></i> eskisehirelitmtsk@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo2.png" alt="ÖZEL ELİT SÜRÜCÜ KURSU" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html">Anasayfa</a>
+        <a href="psikoteknik.html">Psikoteknik</a>
+        <a href="index.html#ehliyet">Ehliyet</a>
+        <a href="galeri.html" class="active">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Anasayfa</a>
+    <a href="psikoteknik.html">Psikoteknik</a>
+    <a href="index.html#ehliyet">Ehliyet</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html">Anasayfa</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Galeri</span>
+      </nav>
+      <h1>Fotoğraf <span>Galerisi</span></h1>
+      <p>Şubelerimiz, eğitim araçlarımız ve başarılı kursiyerlerimiz</p>
+    </div>
+  </section>
+
+  <section class="galeri-section">
+    <div class="container">
+
+      <!-- Filtre butonları -->
+      <div class="galeri-filter">
+        <button class="galeri-filter__btn active" data-filter="all">Tümü</button>
+        <button class="galeri-filter__btn" data-filter="sube">Şubeler</button>
+        <button class="galeri-filter__btn" data-filter="arac">Eğitim Araçları</button>
+        <button class="galeri-filter__btn" data-filter="kursiyerler">Kursiyerler</button>
+      </div>
+
+      <!--
+        EKLENECEK GÖRSELLER (assets/ klasörüne yükleyin):
+        - assets/galeri-guллük-sube-dis.jpg       (Güllük şube dış cephe)
+        - assets/galeri-guллük-sube-ic.jpg        (Güllük şube iç mekan)
+        - assets/galeri-odunpazari-sube.jpg       (Odunpazarı şube)
+        - assets/galeri-uluonder-sube.jpg         (Uluönder şube)
+        - assets/galeri-vw-polo.jpg               (Volkswagen Polo eğitim aracı)
+        - assets/galeri-vw-golf.jpg               (Volkswagen Golf eğitim aracı)
+        - assets/galeri-motosiklet-egitim.jpg     (Motosiklet eğitim alanı)
+        - assets/galeri-teorik-sinif.jpg          (Teorik eğitim sınıfı)
+        - assets/galeri-kursiyer-1.jpg            (Başarılı kursiyer belgesiyle)
+        - assets/galeri-kursiyer-2.jpg
+        - assets/galeri-kursiyer-3.jpg
+        - assets/galeri-kursiyer-4.jpg
+      -->
+
+      <div class="galeri-grid" id="galeriGrid">
+
+        <!-- ŞUBELER -->
+        <div class="galeri-item" data-category="sube">
+          <div class="galeri-placeholder"><i class="fa-solid fa-store"></i><span>Güllük Şube – Dış Cephe</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item" data-category="sube">
+          <div class="galeri-placeholder"><i class="fa-solid fa-store"></i><span>Güllük Şube – İç Mekan</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item galeri-item--wide" data-category="sube">
+          <div class="galeri-placeholder"><i class="fa-solid fa-store"></i><span>Odunpazarı Şube</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item" data-category="sube">
+          <div class="galeri-placeholder"><i class="fa-solid fa-store"></i><span>Uluönder Şube</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <!-- ARAÇLAR -->
+        <div class="galeri-item galeri-item--tall" data-category="arac">
+          <div class="galeri-placeholder"><i class="fa-solid fa-car"></i><span>Volkswagen Polo – Eğitim Aracı</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item" data-category="arac">
+          <div class="galeri-placeholder"><i class="fa-solid fa-car"></i><span>Volkswagen Golf</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item" data-category="arac">
+          <div class="galeri-placeholder"><i class="fa-solid fa-motorcycle"></i><span>Motosiklet Eğitim Alanı</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item" data-category="arac">
+          <div class="galeri-placeholder"><i class="fa-solid fa-chalkboard-user"></i><span>Teorik Eğitim Sınıfı</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <!-- KURSİYERLER -->
+        <div class="galeri-item" data-category="kursiyerler">
+          <div class="galeri-placeholder"><i class="fa-solid fa-user-graduate"></i><span>Başarılı Kursiyer</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item galeri-item--wide" data-category="kursiyerler">
+          <div class="galeri-placeholder"><i class="fa-solid fa-users"></i><span>Mezuniyet Töreni</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="galeri-item" data-category="kursiyerler">
+          <div class="galeri-placeholder"><i class="fa-solid fa-user-graduate"></i><span>Ehliyet Alan Kursiyer</span></div>
+          <div class="galeri-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+      </div>
+
+      <div class="galeri-cta">
+        <p>Daha fazla fotoğraf ve video için sosyal medya sayfalarımızı takip edin.</p>
+        <div class="galeri-cta__btns">
+          <a href="#" class="btn btn--dark"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="#" class="btn btn--dark"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          <a href="#" class="btn btn--dark"><i class="fa-brands fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <img src="assets/logo2.png" alt="ÖZEL ELİT SÜRÜCÜ KURSU" class="footer__logo-img" />
+        <p>ÖZEL ELİT SÜRÜCÜ KURSU olarak sürücü eğitiminin her aşamasında adaylarımızın yanındayız.</p>
+        <div class="footer__socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Ehliyet Sınıfları</h4>
+        <ul>
+          <li><a href="a-sinifi-ehliyet.html">A Sınıfı Ehliyet</a></li>
+          <li><a href="b-sinifi-ehliyet.html">B Sınıfı Ehliyet</a></li>
+          <li><a href="a1-sinifi-ehliyet.html">A1 Sınıfı Ehliyet</a></li>
+          <li><a href="a2-sinifi-ehliyet.html">A2 Sınıfı Ehliyet</a></li>
+          <li><a href="c-sinifi-ehliyet.html">C Sınıfı Ehliyet</a></li>
+          <li><a href="ce-sinifi-ehliyet.html">CE Sınıfı Ehliyet</a></li>
+          <li><a href="a2-otomatik-ehliyet.html">A2 Otomatik Ehliyet</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Adres ve İletişim</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Güllük Mah. Sakarya-2 Cad. No:69</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:02223223399">0(222) 322 33 99</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:eskisehirelitmtsk@gmail.com">eskisehirelitmtsk@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container"><p>Copyright © 2024 ÖZEL ELİT SÜRÜCÜ KURSU | Tüm Hakları Saklıdır.</p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></button>
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/905464636166" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp ile ulaşın">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">WhatsApp ile Ulaşın</span>
+  </a>
+  <script src="js/main.js"></script>
+  <script src="js/galeri.js"></script>
+</body>
+</html>

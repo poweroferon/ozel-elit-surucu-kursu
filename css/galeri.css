@@ -1,0 +1,167 @@
+/* Galeri Page */
+.galeri-section { padding: 4rem 0 6rem; }
+
+.galeri-filter {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.galeri-filter__btn {
+  padding: .55rem 1.4rem;
+  border-radius: 50px;
+  border: 2px solid var(--gray2);
+  font-weight: 600;
+  font-size: .85rem;
+  color: var(--text-light);
+  background: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.galeri-filter__btn:hover,
+.galeri-filter__btn.active {
+  border-color: var(--yellow);
+  background: var(--yellow);
+  color: var(--dark2);
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
+  gap: 1rem;
+}
+.galeri-item {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--dark3);
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.galeri-item:hover { transform: scale(1.02); }
+.galeri-item--wide { grid-column: span 2; }
+.galeri-item--tall { grid-row: span 2; }
+.galeri-item.hidden { display: none; }
+
+.galeri-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  color: rgba(255,255,255,.25);
+  padding: 1rem;
+  text-align: center;
+}
+.galeri-placeholder i { font-size: 2.5rem; color: var(--yellow); opacity: .3; }
+.galeri-placeholder span { font-size: .78rem; }
+
+.galeri-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(245,197,24,.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+.galeri-overlay i { font-size: 2rem; color: var(--white); }
+.galeri-item:hover .galeri-overlay { opacity: 1; background: rgba(245,197,24,.2); }
+
+.galeri-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+.galeri-cta p { color: var(--text-light); margin-bottom: 1.25rem; }
+.galeri-cta__btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* Psikoteknik cards */
+.psy-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.psy-card {
+  background: var(--gray);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  border: 2px solid transparent;
+  transition: var(--transition);
+}
+.psy-card:hover { border-color: var(--yellow); background: var(--white); box-shadow: var(--shadow); }
+.psy-card i { font-size: 1.6rem; color: var(--yellow); margin-bottom: .6rem; display: block; }
+.psy-card h4 { font-size: .9rem; font-weight: 700; color: var(--dark2); margin-bottom: .35rem; }
+.psy-card p { font-size: .82rem; color: var(--text-light); line-height: 1.6; }
+
+/* İletişim şube kartları */
+.iletisim-subeler { padding: 5rem 0; background: var(--gray); }
+.iletisim-subeler__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 3rem;
+}
+.iletisim-sube-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 2px solid transparent;
+  transition: var(--transition);
+}
+.iletisim-sube-card:hover { border-color: var(--yellow); transform: translateY(-4px); }
+.iletisim-sube-card--featured {
+  border-color: var(--yellow);
+  background: var(--dark2);
+}
+.iletisim-sube-card--featured h3 { color: var(--yellow) !important; }
+.iletisim-sube-card--featured .ic-detail { color: rgba(255,255,255,.7); }
+.iletisim-sube-card--featured .ic-detail a { color: rgba(255,255,255,.7); }
+.iletisim-sube-card--featured .ic-detail a:hover { color: var(--yellow); }
+.iletisim-sube-card__header {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  margin-bottom: 1.25rem;
+}
+.iletisim-sube-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.iletisim-sube-card__icon i { color: var(--dark2); font-size: 1.1rem; }
+.iletisim-sube-card__header h3 { font-size: 1.1rem; font-weight: 800; color: var(--dark2); }
+.iletisim-sube-card__body { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.25rem; }
+.ic-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: .6rem;
+  font-size: .875rem;
+  color: var(--text-light);
+}
+.ic-detail i { color: var(--yellow); margin-top: .15rem; flex-shrink: 0; font-size: .85rem; }
+.ic-detail a { color: var(--text-light); transition: color var(--transition); }
+.ic-detail a:hover { color: var(--yellow-dark); }
+.iletisim-map { border-radius: var(--radius); overflow: hidden; margin-bottom: .5rem; }
+
+@media (max-width: 900px) {
+  .iletisim-subeler__grid { grid-template-columns: 1fr; }
+  .galeri-grid { grid-template-columns: repeat(2, 1fr); }
+  .galeri-item--wide { grid-column: span 2; }
+  .galeri-item--tall { grid-row: span 1; }
+  .psy-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .galeri-grid { grid-template-columns: 1fr; }
+  .galeri-item--wide { grid-column: span 1; }
+}
