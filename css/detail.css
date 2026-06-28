@@ -197,8 +197,33 @@
 .sidebar-links a:hover { color: var(--yellow); }
 .sidebar-links i { color: var(--yellow); font-size: .8rem; width: 16px; }
 
+/* Price sidebar card */
+.sidebar-card--price {
+  background: linear-gradient(135deg, var(--dark2) 0%, var(--dark3) 100%);
+  border-color: var(--yellow);
+}
+.sidebar-card--price h3 { color: var(--yellow); }
+.detail-price-amount {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--yellow);
+  line-height: 1.2;
+  min-height: 1.2em;
+}
+.detail-price-label {
+  font-size: .85rem;
+  color: rgba(255,255,255,.6);
+  margin-bottom: .75rem;
+  margin-top: .2rem;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .detail-grid { grid-template-columns: 1fr; }
   .detail-sidebar { position: static; }
+}
+@media (max-width: 480px) {
+  .detail-section { padding: 3rem 0; }
+  .page-hero { padding: 3.5rem 0 2.5rem; }
 }

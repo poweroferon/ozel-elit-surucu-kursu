@@ -1,31 +1,62 @@
 // ============================================================
-// DİNAMİK FİYAT SİSTEMİ – fiyatlar.json
+// DİNAMİK FİYAT SİSTEMİ – Google Sheets
+// Spreadsheet: A sütunu = sınıf adı, B sütunu = fiyat
 // ============================================================
-async function fiyatlariYukle() {
-  try {
-    const res = await fetch('fiyatlar.json');
-    if (!res.ok) return;
-    const data = await res.json();
+const SHEETS_URL = 'https://docs.google.com/spreadsheets/d/1DeR4mCVe4FtHDLaIBJi4rX6HjQPtyGHiyT9VjSfWtjI/gviz/tq?tqx=out:json';
 
-    data.ehliyetler.forEach(ehliyet => {
-      // Fiyat göster
-      document.querySelectorAll('.ehliyet-fiyat[data-id="' + ehliyet.id + '"]').forEach(el => {
-        el.textContent = ehliyet.fiyat ? ehliyet.fiyat + ' ₺' : '';
-      });
-      // Fiyat etiketi
-      document.querySelectorAll('.ehliyet-fiyat-label[data-id="' + ehliyet.id + '"]').forEach(el => {
-        el.textContent = ehliyet.fiyat_label || '';
-      });
-      // Açıklama
-      document.querySelectorAll('.ehliyet-aciklama[data-id="' + ehliyet.id + '"]').forEach(el => {
-        el.textContent = ehliyet.aciklama;
-      });
+const SINIF_ID_MAP = {
+  'a': 'a', 'a sinifi': 'a', 'a sinifi ehliyet': 'a',
+  'b': 'b', 'b sinifi': 'b', 'b sinifi ehliyet': 'b',
+  'a1': 'a1', 'a1 sinifi': 'a1', 'a1 sinifi ehliyet': 'a1',
+  'a2': 'a2', 'a2 sinifi': 'a2', 'a2 sinifi ehliyet': 'a2',
+  'c': 'c', 'c sinifi': 'c', 'c sinifi ehliyet': 'c',
+  'ce': 'ce', 'ce sinifi': 'ce', 'ce sinifi ehliyet': 'ce',
+  'a2 otomatik': 'a2-otomatik', 'a2 otomatik sinifi': 'a2-otomatik',
+  'a2 otomatik ehliyet': 'a2-otomatik', 'a2otomatik': 'a2-otomatik'
+};
+
+function normalizeSinif(text) {
+  if (!text) return '';
+  return text.toString().toLowerCase()
+    .replace(/ı/g, 'i').replace(/ğ/g, 'g')
+    .replace(/ş/g, 's').replace(/ç/g, 'c')
+    .replace(/ö/g, 'o').replace(/ü/g, 'u')
+    .replace(/\s+/g, ' ').trim();
+}
+
+function populatePriceElements(id, fiyat) {
+  const fiyatStr = fiyat ? String(fiyat).trim() : '';
+  document.querySelectorAll('.ehliyet-fiyat[data-id="' + id + '"]').forEach(el => {
+    el.textContent = fiyatStr ? fiyatStr + ' ₺' : '';
+  });
+  document.querySelectorAll('.ehliyet-fiyat-label[data-id="' + id + '"]').forEach(el => {
+    el.textContent = fiyatStr ? 'kurs ücreti' : 'Fiyat için arayın';
+  });
+}
+
+async function sheetstenFiyatlariYukle() {
+  try {
+    const res = await fetch(SHEETS_URL);
+    if (!res.ok) return;
+    const text = await res.text();
+    // gviz JSON-P formatından JSON'u çıkar
+    const jsonStr = text.replace(/^[^(]*\(/, '').replace(/\);\s*$/, '');
+    const data = JSON.parse(jsonStr);
+    const rows = data.table && data.table.rows;
+    if (!rows) return;
+    rows.forEach(row => {
+      if (!row.c || !row.c[0]) return;
+      const sinifRaw = row.c[0].v || row.c[0].f || '';
+      const fiyatRaw = row.c[1] ? (row.c[1].v || row.c[1].f || '') : '';
+      const normalized = normalizeSinif(sinifRaw);
+      const id = SINIF_ID_MAP[normalized];
+      if (id) populatePriceElements(id, fiyatRaw);
     });
   } catch (e) {
-    // JSON yoksa veya hata varsa sessizce geç
+    // Sheets erişilemezse varsayılan metin kalır
   }
 }
-fiyatlariYukle();
+sheetstenFiyatlariYukle();
 
 // ============================================================
 // NAVBAR SCROLL EFFECT
@@ -48,7 +79,6 @@ if (navToggle && mobileMenu) {
   navToggle.addEventListener('click', () => {
     const open = mobileMenu.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', open);
-    // Hamburger → X animasyonu
     navToggle.classList.toggle('is-active', open);
   });
   mobileMenu.querySelectorAll('a').forEach(a => {
@@ -149,7 +179,7 @@ if (contactForm) {
 // ============================================================
 const observerOptions = { threshold: 0.08, rootMargin: '0px 0px -40px 0px' };
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
       setTimeout(() => {
         entry.target.classList.add('is-visible');

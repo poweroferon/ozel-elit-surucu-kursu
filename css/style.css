@@ -212,7 +212,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 /* Navbar Logo Image */
 .navbar__logo-img {
-  height: 64px;
+  height: 80px;
   width: auto;
   display: block;
   transition: transform var(--transition), opacity var(--transition);
@@ -580,7 +580,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .licenses__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.75rem;
   margin-top: 4rem;
 }
 .license-card {
@@ -588,95 +588,96 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: transform var(--transition-slow), box-shadow var(--transition-slow);
-  position: relative;
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow), border-color var(--transition);
   display: flex;
   flex-direction: column;
-  border: 1.5px solid transparent;
+  border: 1.5px solid var(--gray2);
 }
 .license-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--yellow-glow);
+  border-color: var(--yellow);
 }
-.license-card--featured {
-  border: 2px solid var(--yellow);
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-yellow);
+.license-card--highlight {
+  border-color: var(--yellow);
 }
-.license-card--featured:hover { transform: translateY(-14px); box-shadow: 0 24px 80px rgba(245,197,24,.25); }
+.license-card--highlight:hover { box-shadow: 0 24px 80px rgba(245,197,24,.2); }
+
+/* Icon area */
+.license-card__icon-area {
+  background: linear-gradient(135deg, var(--dark2) 0%, var(--dark3) 100%);
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.license-card__icon-area::before {
+  content: '';
+  position: absolute;
+  bottom: -20px; right: -20px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background: rgba(245,197,24,.06);
+}
+.license-card__icon-area i { font-size: 3.75rem; color: var(--yellow); opacity: .7; }
+.license-card__icon-area--featured { background: linear-gradient(135deg, var(--dark2) 0%, #0f3460 100%); }
+.license-card__icon-area--featured i { opacity: 1; }
+
 .license-card__badge {
   position: absolute;
-  top: 1.1rem;
-  right: 1.1rem;
+  top: .75rem; right: .75rem;
   background: var(--yellow);
   color: var(--dark2);
-  font-size: .68rem;
+  font-size: .65rem;
   font-weight: 800;
-  padding: .3rem .85rem;
+  padding: .25rem .7rem;
   border-radius: 50px;
   letter-spacing: .07em;
   text-transform: uppercase;
 }
-.license-card__img {
-  background: linear-gradient(135deg, var(--gray), var(--gray2));
-  height: 210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-.license-card__img::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,.05));
-}
-.license-card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.4,0,.2,1); }
-.license-card:hover .license-card__img img { transform: scale(1.08); }
-.license-card__img i { font-size: 5.5rem; color: var(--yellow); opacity: .25; }
-
-/* Fiyat alanı */
-.license-card__price {
-  display: flex;
-  align-items: baseline;
-  gap: .25rem;
-  padding: .75rem 1.5rem 0;
-}
-.license-card__price .price-amount {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: var(--yellow-dark);
-}
-.license-card__price .price-label {
-  font-size: .75rem;
-  color: var(--text-light);
-  font-weight: 500;
-}
 
 .license-card__body {
-  padding: 1rem 1.5rem 1.75rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 .license-card__body h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 900;
   color: var(--dark2);
-  margin-bottom: .65rem;
+  margin-bottom: .55rem;
   letter-spacing: -.01em;
 }
 .license-card__body p {
-  font-size: .875rem;
+  font-size: .855rem;
   color: var(--text-light);
   line-height: 1.75;
   flex: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
+.license-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray2);
+  margin-top: auto;
+}
+.license-card__price-wrap { display: flex; flex-direction: column; min-width: 0; }
+.ehliyet-fiyat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--yellow-dark);
+  line-height: 1.1;
+}
+.ehliyet-fiyat-label { font-size: .72rem; color: var(--text-light); margin-top: .1rem; }
+.btn--sm { padding: .6rem 1.2rem !important; font-size: .8rem !important; }
 
 /* ============================================================
    PSİKOTEKNİK
