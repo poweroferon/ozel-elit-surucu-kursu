@@ -49,9 +49,9 @@ async function harcVerisiniYukle() {
     if (kv["Sayfa Başlığı"]) {
       document.querySelectorAll('[data-harc="baslik"]').forEach(el => el.textContent = kv["Sayfa Başlığı"]);
     }
-    if (kv["Sayfa Açıklaması"]) {
-      const aciklamaEl = document.querySelector('[data-harc="aciklama"]');
-      if (aciklamaEl) aciklamaEl.textContent = kv["Sayfa Açıklaması"];
+    const aciklamaEl = document.querySelector('[data-harc="aciklama"]');
+    if (aciklamaEl) {
+      aciklamaEl.textContent = kv["Sayfa Açıklaması"] || "Güncel ehliyet harç tutarları";
     }
   } catch (e) {
     // Yüklenemezse placeholder kalır
