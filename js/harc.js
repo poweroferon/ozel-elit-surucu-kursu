@@ -37,7 +37,7 @@ async function harcVerisiniYukle() {
         // Sayıyı tr-TR formatına çevirip sonuna TL ekler (Örn: 8.869,60 TL yapar)
         const numVal = parseFloat(kv[key]);
         if (!isNaN(numVal)) {
-          el.textContent = numVal.toLocaleString('tr-TR', { minimumFractionDigits: 2 }) + " TL";
+          el.textContent = numVal.toLocaleString('tr-TR', { minimumFractionDigits: 2 }) + " ₺";
         } else {
           el.textContent = kv[key];
         }
