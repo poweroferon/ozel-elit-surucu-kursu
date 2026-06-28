@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="assets/logo2.png" type="image/png" />
 </head>
 <body>
 
@@ -41,6 +42,7 @@
         <a href="index.html" class="active">Anasayfa</a>
         <a href="psikoteknik.html">Psikoteknik</a>
         <a href="#ehliyet">Ehliyet</a>
+        <a href="harc.html">Harç</a>
         <a href="galeri.html">Galeri</a>
         <a href="iletisim.html">İletişim</a>
       </nav>
@@ -55,6 +57,7 @@
     <a href="index.html">Anasayfa</a>
     <a href="psikoteknik.html">Psikoteknik</a>
     <a href="#ehliyet">Ehliyet</a>
+    <a href="harc.html">Harç</a>
     <a href="galeri.html">Galeri</a>
     <a href="iletisim.html">İletişim</a>
   </div>
@@ -65,9 +68,9 @@
       <div class="hero__slide hero__slide--1 active">
         <div class="hero__overlay"></div>
         <div class="container hero__content">
-          <p class="hero__eyebrow">Eskişehir'in Güvenilir Adresi</p>
-          <h1 class="hero__title">Özel Elit<br /><span>Sürücü Kursu</span></h1>
-          <p class="hero__desc">Güllük Mah. Sakarya-2 Cad. No:69 (Keskin Market Karşısı)</p>
+          <p class="hero__eyebrow">Merkez Şubemiz</p>
+          <h1 class="hero__title">Elit Sürücü Kursu<br /><span>Merkez</span></h1>
+          <p class="hero__desc">Güllük Mahallesi Sakarya-2 Caddesi No:69 (Keskin Market Karşısı)</p>
           <div class="hero__actions">
             <a href="#iletisim" class="btn btn--primary">Bize Ulaşın</a>
             <a href="#ehliyet" class="btn btn--outline">Eğitimler</a>
@@ -191,7 +194,7 @@
       <h2 class="section-title text-center">Eğitimler</h2>
       <div class="licenses__grid">
 
-        <div class="license-card" data-ehliyet-id="a">
+        <div class="license-card">
           <div class="license-card__icon-area">
             <i class="fa-solid fa-motorcycle"></i>
           </div>
@@ -199,16 +202,12 @@
             <h3>A Sınıfı Ehliyet</h3>
             <p>35 kw üzeri güçlü motosikletler için zorunlu sınıf. Uzman eğitmenlerimizle teorik ve pratik eğitim alabilirsiniz.</p>
             <div class="license-card__footer">
-              <div class="license-card__price-wrap">
-                <span class="ehliyet-fiyat" data-id="a"></span>
-                <span class="ehliyet-fiyat-label" data-id="a">Fiyat için arayın</span>
-              </div>
-              <a href="a-sinifi-ehliyet.html" class="btn btn--dark btn--sm">Detay</a>
+              <a href="a-sinifi-ehliyet.html" class="btn btn--dark license-card__btn">Detay</a>
             </div>
           </div>
         </div>
 
-        <div class="license-card license-card--highlight" data-ehliyet-id="b">
+        <div class="license-card license-card--highlight">
           <div class="license-card__icon-area license-card__icon-area--featured">
             <i class="fa-solid fa-car"></i>
             <span class="license-card__badge">Popüler</span>
@@ -217,16 +216,12 @@
             <h3>B Sınıfı Ehliyet</h3>
             <p>Otomobil ve kamyonet için en yaygın ehliyet sınıfı. M, B1 ve F sınıfı araçları da kapsar.</p>
             <div class="license-card__footer">
-              <div class="license-card__price-wrap">
-                <span class="ehliyet-fiyat" data-id="b"></span>
-                <span class="ehliyet-fiyat-label" data-id="b">Fiyat için arayın</span>
-              </div>
-              <a href="b-sinifi-ehliyet.html" class="btn btn--primary btn--sm">Detay</a>
+              <a href="b-sinifi-ehliyet.html" class="btn btn--primary license-card__btn">Detay</a>
             </div>
           </div>
         </div>
 
-        <div class="license-card" data-ehliyet-id="a1">
+        <div class="license-card">
           <div class="license-card__icon-area">
             <i class="fa-solid fa-motorcycle"></i>
           </div>
@@ -234,16 +229,12 @@
             <h3>A1 Sınıfı Ehliyet</h3>
             <p>125 cc'ye kadar motosikletler ve 15 kw altı üç tekerlekli araçlar için geçerli ehliyet sınıfı.</p>
             <div class="license-card__footer">
-              <div class="license-card__price-wrap">
-                <span class="ehliyet-fiyat" data-id="a1"></span>
-                <span class="ehliyet-fiyat-label" data-id="a1">Fiyat için arayın</span>
-              </div>
-              <a href="a1-sinifi-ehliyet.html" class="btn btn--dark btn--sm">Detay</a>
+              <a href="a1-sinifi-ehliyet.html" class="btn btn--dark license-card__btn">Detay</a>
             </div>
           </div>
         </div>
 
-        <div class="license-card" data-ehliyet-id="a2">
+        <div class="license-card">
           <div class="license-card__icon-area">
             <i class="fa-solid fa-motorcycle"></i>
           </div>
@@ -251,16 +242,12 @@
             <h3>A2 Sınıfı Ehliyet</h3>
             <p>18 yaş ve üstü adaylar için. A1 ve M sınıfı araçları da kullanma yetkisi sağlar.</p>
             <div class="license-card__footer">
-              <div class="license-card__price-wrap">
-                <span class="ehliyet-fiyat" data-id="a2"></span>
-                <span class="ehliyet-fiyat-label" data-id="a2">Fiyat için arayın</span>
-              </div>
-              <a href="a2-sinifi-ehliyet.html" class="btn btn--dark btn--sm">Detay</a>
+              <a href="a2-sinifi-ehliyet.html" class="btn btn--dark license-card__btn">Detay</a>
             </div>
           </div>
         </div>
 
-        <div class="license-card" data-ehliyet-id="c">
+        <div class="license-card">
           <div class="license-card__icon-area">
             <i class="fa-solid fa-truck"></i>
           </div>
@@ -268,16 +255,12 @@
             <h3>C Sınıfı Ehliyet</h3>
             <p>Kamyon ve çekici araçlar için. Kapsamlı teorik ve pratik eğitim ile ehliyet alma imkânı.</p>
             <div class="license-card__footer">
-              <div class="license-card__price-wrap">
-                <span class="ehliyet-fiyat" data-id="c"></span>
-                <span class="ehliyet-fiyat-label" data-id="c">Fiyat için arayın</span>
-              </div>
-              <a href="c-sinifi-ehliyet.html" class="btn btn--dark btn--sm">Detay</a>
+              <a href="c-sinifi-ehliyet.html" class="btn btn--dark license-card__btn">Detay</a>
             </div>
           </div>
         </div>
 
-        <div class="license-card" data-ehliyet-id="ce">
+        <div class="license-card">
           <div class="license-card__icon-area">
             <i class="fa-solid fa-truck-moving"></i>
           </div>
@@ -285,16 +268,12 @@
             <h3>CE Sınıfı Ehliyet</h3>
             <p>TIR ve römork araçları için. Geniş çaplı teorik ve pratik eğitimle sertifika alma imkânı.</p>
             <div class="license-card__footer">
-              <div class="license-card__price-wrap">
-                <span class="ehliyet-fiyat" data-id="ce"></span>
-                <span class="ehliyet-fiyat-label" data-id="ce">Fiyat için arayın</span>
-              </div>
-              <a href="ce-sinifi-ehliyet.html" class="btn btn--dark btn--sm">Detay</a>
+              <a href="ce-sinifi-ehliyet.html" class="btn btn--dark license-card__btn">Detay</a>
             </div>
           </div>
         </div>
 
-        <div class="license-card" data-ehliyet-id="a2-otomatik">
+        <div class="license-card">
           <div class="license-card__icon-area">
             <i class="fa-solid fa-motorcycle"></i>
           </div>
@@ -302,11 +281,7 @@
             <h3>A2 Otomatik Ehliyet</h3>
             <p>Vitessiz otomatik motosikletle sınava girme kolaylığı sağlayan A2 sınıfı ehliyet türü.</p>
             <div class="license-card__footer">
-              <div class="license-card__price-wrap">
-                <span class="ehliyet-fiyat" data-id="a2-otomatik"></span>
-                <span class="ehliyet-fiyat-label" data-id="a2-otomatik">Fiyat için arayın</span>
-              </div>
-              <a href="a2-otomatik-ehliyet.html" class="btn btn--dark btn--sm">Detay</a>
+              <a href="a2-otomatik-ehliyet.html" class="btn btn--dark license-card__btn">Detay</a>
             </div>
           </div>
         </div>
@@ -327,7 +302,7 @@
           <li><i class="fa-solid fa-check"></i> Tepki süresi ölçümü</li>
           <li><i class="fa-solid fa-check"></i> Uzman rehberliği ile hazırlık</li>
         </ul>
-        <a href="#iletisim" class="btn btn--primary">Bilgi Al</a>
+        <a href="psikoteknik.html" class="btn btn--primary">Bilgi Al</a>
       </div>
       <div class="psikoteknik__cards">
         <div class="info-card">
@@ -346,7 +321,7 @@
           <p>Mustafa Kemal Atatürk Cd. NO:162/A adresimizde hizmetinizdeyiz.</p>
         </div>
         <div class="info-card">
-          <i class="fa-solid fa-steering-wheel"></i>
+          <i class="fa-solid fa-car"></i>
           <h4>Özel Direksiyon Dersi</h4>
           <p>Bireysel ihtiyaçlarınıza özel ek direksiyon dersleri alın.</p>
         </div>
@@ -436,13 +411,9 @@
 
       </div>
       <div class="reviews__actions">
-        <a href="https://maps.google.com/?cid=3426350475058478455" target="_blank" rel="noopener" class="btn btn--outline-dark">
+        <a href="https://www.google.com/search?sca_esv=89350bf0a2b2012a&cs=1&sxsrf=APpeQnuY6ZTgvm2wLgX3P4u0BRS6G5Ezbw:1782639637958&q=Elit+S%C3%BCr%C3%BCc%C3%BC+Kursu+Yorumlar&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NjEyMzY1MDE3NTC1MDG3MDE13cDI-IpR1jUns0Qh-PCeosN7kg_vUfAuLSouVYjMLyrNzUksWsSKXx4A6CnikVoAAAA&rldimm=3426350475058478455&tbm=lcl&hl=tr-TR&sa=X&ved=2ahUKEwiI_YWT0qmVAxX31gIHHRbmAO4Q9fQKegQIDxAG&biw=1536&bih=756&dpr=1.25#lkt=LocalPoiReviews" target="_blank" rel="noopener" class="btn btn--outline-dark">
           <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Sakarya Şubesi Yorumları
-        </a>
-        <a href="https://maps.google.com/?cid=12155408317219949292" target="_blank" rel="noopener" class="btn btn--outline-dark">
-          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Uluönder Şubesi Yorumları
+          Google Yorumları
         </a>
       </div>
     </div>
@@ -463,7 +434,7 @@
             <a href="tel:05464636166"><i class="fa-solid fa-mobile"></i> 0(546) 463 61 66</a>
           </div>
         </div>
-        <div class="branch-card branch-card--featured">
+        <div class="branch-card">
           <div class="branch-card__icon"><i class="fa-solid fa-location-dot"></i></div>
           <h3>Odunpazarı Şube</h3>
           <p>Mustafa Kemal Atatürk Cd. NO:162/A<br />(Gülay Kanatlı Ortaokulu Çaprazı)</p>
@@ -495,6 +466,7 @@
           <div>
             <strong>Merkez Şube</strong>
             <span>Güllük Mah. Sakarya-2 Cad. No:69 (Keskin Market Karşısı)</span>
+            <span class="contact__phones"><a href="tel:02223223399">0(222) 322 33 99</a> — <a href="tel:05464636166">0(546) 463 61 66</a></span>
           </div>
         </div>
         <div class="contact__detail">
@@ -502,6 +474,7 @@
           <div>
             <strong>Odunpazarı Şube</strong>
             <span>İstiklal, Başarı Sk. No:3/2, 26000 Odunpazarı/Eskişehir</span>
+            <span class="contact__phones"><a href="tel:02222349095">0(222) 234 90 95</a></span>
           </div>
         </div>
         <div class="contact__detail">
@@ -509,13 +482,7 @@
           <div>
             <strong>Uluönder Şube</strong>
             <span>Uluönder Mah. İsmet İnönü-2 Cd. No:43/A (Birtat Fırın Bistro Karşısı)</span>
-          </div>
-        </div>
-        <div class="contact__detail">
-          <i class="fa-solid fa-phone"></i>
-          <div>
-            <strong>Telefon</strong>
-            <span>0(222) 322 33 99 — 0(546) 463 61 66</span>
+            <span class="contact__phones"><a href="tel:02223353388">0(222) 335 33 88</a> — <a href="tel:05526989899">0(552) 698 98 99</a></span>
           </div>
         </div>
         <div class="contact__detail">

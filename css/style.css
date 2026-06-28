@@ -661,23 +661,30 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .license-card__footer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: .75rem;
+  justify-content: center;
   padding-top: 1rem;
   border-top: 1px solid var(--gray2);
   margin-top: auto;
 }
-.license-card__price-wrap { display: flex; flex-direction: column; min-width: 0; }
-.ehliyet-fiyat {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: var(--yellow-dark);
-  line-height: 1.1;
+.license-card__btn {
+  width: 100%;
+  justify-content: center;
+  padding: .75rem 1.5rem;
+  font-size: .875rem;
 }
-.ehliyet-fiyat-label { font-size: .72rem; color: var(--text-light); margin-top: .1rem; }
 .btn--sm { padding: .6rem 1.2rem !important; font-size: .8rem !important; }
+
+/* Contact phone lines */
+.contact__phones {
+  display: block;
+  margin-top: .3rem;
+  font-size: .82rem;
+}
+.contact__phones a {
+  color: rgba(255,255,255,.55);
+  transition: color var(--transition);
+}
+.contact__phones a:hover { color: var(--yellow); }
 
 /* ============================================================
    PSİKOTEKNİK
