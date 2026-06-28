@@ -36,26 +36,43 @@ function populatePriceElements(id, fiyat) {
 
 async function sheetstenFiyatlariYukle() {
   try {
+    console.log("1. Google Sheets'ten veri çekme işlemi başlatıldı...");
     const res = await fetch(SHEETS_URL);
-    if (!res.ok) return;
+    console.log("2. Yanıt Durumu (Status):", res.status, "Ok mi?:", res.ok);
+
+    if (!res.ok) {
+      console.error("Hata: Google Sheets bağlantısı başarısız oldu (ok değil)!");
+      return;
+    }
+
     const text = await res.text();
-    // gviz JSON-P formatından JSON'u çıkar
-    const jsonStr = text.replace(/^[^(]*\(/, '').replace(/\);\s*$/, '');
+    console.log("3. Ham metin başarıyla çekildi.");
+
+    const jsonStr = text.replace(/^[^{]*\(/, '').replace(/\); \s*$/, '');
     const data = JSON.parse(jsonStr);
     const rows = data.table && data.table.rows;
-    if (!rows) return;
+    console.log("4. Satırlar ayrıştırıldı. Toplam satır sayısı:", rows ? rows.length : 0);
+
+    if (!rows) {
+      console.error("Hata: Tablonun içinde veri satırı bulunamadı!");
+      return;
+    }
+
     rows.forEach(row => {
       if (!row.c || !row.c[0]) return;
       const sinifRaw = row.c[0].v || row.c[0].f || '';
       const fiyatRaw = row.c[1] ? (row.c[1].v || row.c[1].f || '') : '';
       const normalized = normalizeSinif(sinifRaw);
       const id = SINIF_ID_MAP[normalized];
+      console.log(`Eşleşme Kontrolü -> Tablodaki: "${sinifRaw}" | Kodda Aranan ID: "${id}" | Fiyat: ${fiyatRaw}`);
       if (id) populatePriceElements(id, fiyatRaw);
     });
+    console.log("5. Tüm fiyatlar başarıyla arayüze basıldı!");
   } catch (e) {
-    // Sheets erişilemezse varsayılan metin kalır
+    console.error("Sheets Bağlantı Hatası:", e);
   }
 }
+
 sheetstenFiyatlariYukle();
 
 // ============================================================
